@@ -1,0 +1,28 @@
+html
+  head
+    title All Tickets
+  body
+    h1 All Tickets
+    table
+      thead
+        tr
+          th ID
+          th Type
+          th Subject
+          th Priority
+          th Status
+          th Tags
+          th
+      tbody
+        each ticket in tickets
+          tr
+            td= ticket.id
+            td= ticket.type
+            td= ticket.subject
+            td= ticket.priority
+            td= ticket.status
+            td= ticket.tags.join(', ')
+            td
+              a(href=`/rest/ticket/${ticket.id}`) View Ticket
+    br
+    a(href='/rest/ticket/new') Create New Ticket

@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <title>Ticket Create</title>
+  </head>
+  <body>
+    <h1>Ticket Create</h1>
+    <form method="POST" action="/rest/ticket">
+      <label for="id">ID:</label>
+      <input type="text" name="id">
+      <br>
+      <label for="type">Type:</label>
+      <input type="text" name="type">
+      <br>
+      <label for="subject">Subject:</label>
+      <input type="text" name="subject">
+      <br>
+      <label for="description">Description:</label>
+      <input type="text" name="description">
+      <br>
+      <label for="priority">Priority:</label>
+      <input type="text" name="priority">
+      <br>
+      <label for="status">Status:</label>
+      <input type="text" name="status">
+      <br>
+      <label for="submitter">Submitter:</label>
+      <input type="text" name="submitter">
+      <br>
+      <label for="assignee_id">Assignee ID:</label>
+      <input type="text" name="assignee_id">
+      <br>
+      <label for="follower_ids">Follower IDs:</label>
+      <input type="text" name="follower_ids">
+      <br>
+      <label for="tags">Tags:</label>
+      <input type="text" name="tags">
+      <br>
+      <label for="created_at">Created At:</label>
+      <input type="text" name="created_at" value="2023-04-07T04:22:13.230Z" readonly>
+      <br>
+      <label for="updated_at">Updated At:</label>
+      <input type="text" name="updated_at" value="2023-04-07T04:22:13.230Z" readonly>
+      <br>
+      <button type="submit">Create Ticket</button>
+    </form>
+  </body>
+</html>
